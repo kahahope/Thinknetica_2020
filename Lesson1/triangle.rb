@@ -7,7 +7,7 @@ b = gets.to_f
 puts "Specify the value of the third side of the triangle in cm."
 c = gets.to_f
 
-a, b, c = sides.sort
+a, b, c = [a, b, c].sort
 
 right = a**2 + b**2 == c**2
 
