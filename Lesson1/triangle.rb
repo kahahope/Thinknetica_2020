@@ -24,5 +24,3 @@ elsif equilateral
 else
 	puts "The triangle is unknown."
 end
-	
-	
