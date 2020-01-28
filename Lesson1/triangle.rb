@@ -16,11 +16,11 @@ isosceles = a == b
 equilateral = a == b && b == c && a == c
 
 if right && isosceles
-	puts "The triangle is rectangular and isosceles."
+  puts "The triangle is rectangular and isosceles."
 elsif right
-	puts "The triangle is rectangular."
+  puts "The triangle is rectangular."
 elsif equilateral
-	puts "The triangle is isosceles and equilateral, but not the rectangular."
+  puts "The triangle is isosceles and equilateral, but not the rectangular."
 else
-	puts "The triangle is unknown."
+  puts "The triangle is unknown."
 end
