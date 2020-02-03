@@ -13,9 +13,7 @@ leapyear = year % 4 == 0 && year % 100 !=0 || year % 400 == 0
 
 months[1] = 29 if leapyear
 
-day_number = 0
-for n in (0..(month -2))
-  day_number += months[n]
-end
+sum = months.take(month - 1).sum
+sum += day
 
-puts "Date serial number counting from the beginning of the year is #{day_number + day} day."
+puts "Date serial number counting from the begining of the year is #{sum} day."
