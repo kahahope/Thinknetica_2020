@@ -10,7 +10,8 @@ class Route
   def add_station(station)
     if @stations.include?(station)
       puts "The station #{station} is on the list already."
-    else @stations.insert(-2, station)
+    else
+      @stations.insert(-2, station)
       puts "The station #{station} added on the list."
     end
   end
